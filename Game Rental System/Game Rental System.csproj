@@ -1,0 +1,377 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{ADC28A0B-DF0C-400A-95D9-F4B9232E1C6F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Game_Rental_System</RootNamespace>
+    <AssemblyName>Game Rental System</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\cprofile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\cprofile.Designer.cs">
+      <DependentUpon>cprofile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AddGame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddGame.Designer.cs">
+      <DependentUpon>AddGame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\adminProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\adminProfile.Designer.cs">
+      <DependentUpon>adminProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\BrowseGames.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\BrowseGames.Designer.cs">
+      <DependentUpon>BrowseGames.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ClientProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ClientProfile.Designer.cs">
+      <DependentUpon>ClientProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DB2022DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DB2022DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\profile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\profile.Designer.cs">
+      <DependentUpon>profile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game_rentalDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Game_rentalDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Game_rentalFINAL.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Game_rentalFINAL.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Game_rentaltest.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Game_rentaltest.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Game_rentalv1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Game_rentalv1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Game_rentalv3.cs">
+      <DependentUpon>Game_rentalv3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Game_rentalv3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Game_rentalv3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Game_rental_DB.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Game_rental_DB.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Game_rentaV2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Game_rentaV2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Forms\Signup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Signup.Designer.cs">
+      <DependentUpon>Signup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\UpdateGame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\UpdateGame.Designer.cs">
+      <DependentUpon>UpdateGame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SearchGames.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SearchGames.Designer.cs">
+      <DependentUpon>SearchGames.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\queriesform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\queriesform.Designer.cs">
+      <DependentUpon>queriesform.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\cprofile.resx">
+      <DependentUpon>cprofile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AddGame.resx">
+      <DependentUpon>AddGame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\adminProfile.resx">
+      <DependentUpon>adminProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\BrowseGames.resx">
+      <DependentUpon>BrowseGames.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ClientProfile.resx">
+      <DependentUpon>ClientProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\profile.resx">
+      <DependentUpon>profile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Forms\Signup.resx">
+      <DependentUpon>Signup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UpdateGame.resx">
+      <DependentUpon>UpdateGame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SearchGames.resx">
+      <DependentUpon>SearchGames.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\queriesform.resx">
+      <DependentUpon>queriesform.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="DB2022DataSet.xsc">
+      <DependentUpon>DB2022DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DB2022DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DB2022DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DB2022DataSet.xss">
+      <DependentUpon>DB2022DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Game_rentalDataSet.xsc">
+      <DependentUpon>Game_rentalDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Game_rentalDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Game_rentalDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Game_rentalDataSet.xss">
+      <DependentUpon>Game_rentalDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Game_rentalFINAL.xsc">
+      <DependentUpon>Game_rentalFINAL.xsd</DependentUpon>
+    </None>
+    <None Include="Game_rentalFINAL.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Game_rentalFINAL.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Game_rentalFINAL.xss">
+      <DependentUpon>Game_rentalFINAL.xsd</DependentUpon>
+    </None>
+    <None Include="Game_rentaltest.xsc">
+      <DependentUpon>Game_rentaltest.xsd</DependentUpon>
+    </None>
+    <None Include="Game_rentaltest.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Game_rentaltest.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Game_rentaltest.xss">
+      <DependentUpon>Game_rentaltest.xsd</DependentUpon>
+    </None>
+    <None Include="Game_rentalv1.xsc">
+      <DependentUpon>Game_rentalv1.xsd</DependentUpon>
+    </None>
+    <None Include="Game_rentalv1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Game_rentalv1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Game_rentalv1.xss">
+      <DependentUpon>Game_rentalv1.xsd</DependentUpon>
+    </None>
+    <None Include="Game_rentalv3.xsc">
+      <DependentUpon>Game_rentalv3.xsd</DependentUpon>
+    </None>
+    <None Include="Game_rentalv3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Game_rentalv3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Game_rentalv3.xss">
+      <DependentUpon>Game_rentalv3.xsd</DependentUpon>
+    </None>
+    <None Include="Game_rental_DB.xsc">
+      <DependentUpon>Game_rental_DB.xsd</DependentUpon>
+    </None>
+    <None Include="Game_rental_DB.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Game_rental_DB.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Game_rental_DB.xss">
+      <DependentUpon>Game_rental_DB.xsd</DependentUpon>
+    </None>
+    <None Include="Game_rentaV2.xsc">
+      <DependentUpon>Game_rentaV2.xsd</DependentUpon>
+    </None>
+    <None Include="Game_rentaV2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Game_rentaV2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Game_rentaV2.xss">
+      <DependentUpon>Game_rentaV2.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wallhaven-oxr7q9_350x585.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\By Design.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cfb9fdeb968d606ed013392fa53900ae.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-close-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wallhaven-yj1v7g_2560x1440.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-male-user-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-menu-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-update-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-logout-rounded-up-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-add-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-add-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-games-folder-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-search-property-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-close-301.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-enter-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-play-games-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Diesel_blog_account-security-at-epic-games_EGS_Social_Update_News-2560x1440-128a69890d92407b815582c1deba54450e5645f9.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\169-1692394_games-collection.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-search-more-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wallhaven-odkmq9.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
