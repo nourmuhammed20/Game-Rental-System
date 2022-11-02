@@ -12,7 +12,7 @@
 
 namespace Game_Rental_System {
     
-    
+    // New
     /// <summary>
     ///Represents a strongly typed in-memory cache of data.
     ///</summary>
